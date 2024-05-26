@@ -83,13 +83,13 @@ prerequisites =
 		reqitem = ResourceRenew_EC,
 	},
 
-	water_chamber = 
-	{
-		newtype = TYPE_Structure,
-		newitem = WaterChamber_EC,
-		reqtype = TYPE_Research,
-		reqitem = RESEARCH_Rank2,
-	},
+--		water_chamber = 
+--		{
+--			newtype = TYPE_Structure,
+--			newitem = WaterChamber_EC,
+--			reqtype = TYPE_Research,
+--			reqitem = RESEARCH_Rank2,
+--		},
 
 	aviary =
 	{
@@ -131,14 +131,14 @@ prerequisites =
 		reqitem = RESEARCH_Rank2,
 	},
 
-	landingpad = 
-	{
-		newtype = TYPE_Structure,
-		newitem = LandingPad_EC,
-		reqtype = TYPE_Research,
-		reqitem = RESEARCH_AdvancedStructure,
-		limit	= 1,
-	},
+--	landingpad = 
+--	{
+--		newtype = TYPE_Structure,
+--		newitem = LandingPad_EC,
+--		reqtype = TYPE_Research,
+--		reqitem = RESEARCH_AdvancedStructure,
+--		limit	= 1,
+--	},
 
 	landingpadlimit = 
 	{

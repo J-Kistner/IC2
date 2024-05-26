@@ -39,7 +39,7 @@ Poison =
 	speedmultiplier			= 0.75,
 
 	-- The amount to multiply the creature's attack damage by when poisoned
-	damagemultiplier		= 0.85,
+	damagemultiplier		= 0.92,
 
 	-- The poisoned victom has a reduced sight radius to this value
 	poisonsightradius		= 0.0,
@@ -208,11 +208,11 @@ Deflection =
 	-- Valid range is 0.0 (0% - never deflect) to 1.0 (100% - always deflect)
 
 	-- Base deflection chance per creature size
-	deflectionBaseSize1	= 0.2,
-	deflectionBaseSize2	= 0.2,
-	deflectionBaseSize3	= 0.2,
-	deflectionBaseSize4	= 0.2,
-	deflectionBaseSize5	= 0.2,
+	deflectionBaseSize1	= 0.06,
+	deflectionBaseSize2	= 0.08,
+	deflectionBaseSize3	= 0.11,
+	deflectionBaseSize4	= 0.14,
+	deflectionBaseSize5	= 0.18,
 	deflectionBaseSize6	= 0.2,
 	deflectionBaseSize7	= 0.2,
 	deflectionBaseSize8	= 0.2,
@@ -223,14 +223,14 @@ Deflection =
 	deflectionModRank1	= 0.0,
 	deflectionModRank2	= 0.0,
 	deflectionModRank3	= 0.0,
-	deflectionModRank4	= 0.0,
-	deflectionModRank5	= 0.0,
+	deflectionModRank4	= 0.02,
+	deflectionModRank5	= 0.05,
 
 	-- Deflection modifier per defenders attack type (+/-)
 	-- Order of preference (artillery, direct ranged, melee)
-	deflectionModArtillery	= 0.0,
+	deflectionModArtillery	= 0.05,
 	deflectionModRanged	= 0.0,
-	deflectionModMelee	= 0.0,
+	deflectionModMelee	= -0.05,
 
 	-- Deflect sonic attacks?
 	-- yes = 1 (default) or no = 0
@@ -262,7 +262,7 @@ Flash =
 	effectiveRadiusSize10	= 54.0,
 
 	-- Reduced size radius in metres
-	reducedSightRadius 	= 1.0,
+	reducedSightRadius 	= 3.0,
 
 	-- Height above the ground that initial effect will happen (in metres)
 	fxTargetHeight		= 8.0,
@@ -275,11 +275,11 @@ Flash =
 HealthRegen =
 {
 	-- the amount of health that regenerates per second, by creature rank
-	regenamount1		= 0.25,
-	regenamount2		= 0.75,
-	regenamount3		= 1.25,
-	regenamount4		= 1.75,
-	regenamount5		= 2.0,
+	regenamount1		= 0.50,
+	regenamount2		= 0.70,
+	regenamount3		= 1.00,
+	regenamount4		= 1.15,
+	regenamount5		= 1.5,
 }
 
 ---------------------------------------------------------------------
@@ -426,7 +426,7 @@ StinkCloud =
 	descentSpeed			= 5.0,	-- descend 5m per second
 
 	--
-	reducedVictimSpeedTo	= 0.3,  -- 30% of full speed
+	reducedVictimSpeedTo	= 0.5,  -- 50% of full speed
 }
 
 ---------------------------------------------------------------------
@@ -501,8 +501,8 @@ WebThrow =
 
 	-- attack range : C = (creature size (in meters)) O = offset, S = scale
 	-- Final radius = O + C*S  (where O is the minimum radius)
-	rangeOffset				= 6.0,
-	rangeScale				= 0.5,
+	rangeOffset				= 4.0,
+	rangeScale				= 0.35,
 
 	-- damage radius : C = (creature size (in meters)) O = offset, S = scale
 	-- Final radius = O + C*S  (where O is the minimum radius)
@@ -531,10 +531,10 @@ Assassinate =
 	damageTotalBaseSize4	= 0.45,
 	damageTotalBaseSize5	= 0.45,
 	damageTotalBaseSize6	= 0.45,
-	damageTotalBaseSize7	= 0.45,
-	damageTotalBaseSize8	= 0.45,
-	damageTotalBaseSize9	= 0.45,
-	damageTotalBaseSize10	= 0.45,
+	damageTotalBaseSize7	= 0.47,
+	damageTotalBaseSize8	= 0.50,
+	damageTotalBaseSize9	= 0.55,
+	damageTotalBaseSize10	= 0.65,
 }
 
 ---------------------------------------------------------------------
@@ -613,7 +613,7 @@ Digging =
 	defenseBonus			= 0.5,
 
 	-- the amount of time to get underground
-	digDownTime			= .1,
+	digDownTime			= 1.0,
 
 	-- the amount of time to get out of underground
 	digUpTime			= .1,
@@ -748,10 +748,10 @@ AttackBonus =
 	directRangeFenceMult			= 1.0,
 
 	-- multiplier of damage applied to a building when struck with artillery attack
-	artilleryBuildingMult			= 1.0,
+	artilleryBuildingMult			= 2.0,
 
 	-- multiplier of damage applied to a flyer when it is attacked by a non-flyer unit using a direct ranged attack
-	nonFlyerToFlyerDirectRangeDamageMult	= 1.25,
+	nonFlyerToFlyerDirectRangeDamageMult	= 1.2,
 
 	-- fraction of a flyer's defense to remove when it is attacked by a non-flyer unit using a direct ranged attack
 	nonFlyerToFlyerDirectRangeDefenseMult	= 0.0,
@@ -934,6 +934,14 @@ Frenzy =
 }
 
 ---------------------------------------------------------------------
+-- Underpopulation
+
+UnderPop = 
+{
+	-- Bonus Stats per rank
+	1,2,3,4,5
+}
+---------------------------------------------------------------------
 -- SonarPulse
 
 SonarPulse =
@@ -984,7 +992,7 @@ SoiledLand =
 
 	-- The time (in ticks) it takes for the soiled land to expire
 	-- and change back to normal land
-	durationLand		= 500,
+	durationLand		= 400,
 
 	-- Minimum amount of endurance needed to trigger soiled land
 	enduranceMinimum	= 35,
@@ -1104,7 +1112,7 @@ Sabotage =
 	damagePerTick 	= 10.0,
 
 	-- total amount of damage
-	damage		= 2000.0,
+	damage		= 100.0,
 }
 
 ---------------------------------------------------------------------
@@ -1119,19 +1127,19 @@ Flyer =
 	stoppedSpeed 	= 1.5,
 
 	-- fliers will attack every... this number of seconds
-	secondsPerAttack = 3.0,
+	secondsPerAttack = 1.2,
 
 	-- number of ticks it takes a flyer to swoop down to deliver a triggered attack
-	swoopDownTicks = 10.0,
+	swoopDownTicks = 3.0,
 
 	-- number of ticks it takes a flyer to follow thru after swooping down
-	swoopUpTicks = 5.0,
+	swoopUpTicks = 3.0,
 
 	-- the number of seconds of damage a flyer's first attack counts as
-	firstAttackSeconds = 1.0,
+	firstAttackSeconds = 2.0,
 
 	-- melee damage multiplier
-	meleeDmgMult = 1.0,
+	meleeDmgMult = 1.2,
 
 	-- ranged damage multiplier; we're going to use this to fake a high-ground bonus on flyers.
 	rangedDmgMult = high_ground_range_multiplier,
@@ -1175,7 +1183,7 @@ CreatureUpgrade =
 	defenseBonus = 3,
 
 	-- amount to add to a creature's speed
-	speedBonus = 5,
+	speedBonus = 8,
 
 	-- flag that indicates whether the melee damage bonuses
 	--  should be interpreted as a multiplier or a flat number
@@ -1184,11 +1192,11 @@ CreatureUpgrade =
 	meleeDamageBonusAsMult = 1,
 
 	-- melee damage bonuses
-	meleeDamageBonusRank1 = 1.2,
-	meleeDamageBonusRank2 = 1.2,
-	meleeDamageBonusRank3 = 1.2,
-	meleeDamageBonusRank4 = 1.2,
-	meleeDamageBonusRank5 = 1.2,
+	meleeDamageBonusRank1 = 1.3,
+	meleeDamageBonusRank2 = 1.3,
+	meleeDamageBonusRank3 = 1.3,
+	meleeDamageBonusRank4 = 1.3,
+	meleeDamageBonusRank5 = 1.3,
 
 	-- flag that indicates whether the hitpoints bonuses
 	--  should be interpreted as a multiplier or a flat number
@@ -1204,7 +1212,7 @@ CreatureUpgrade =
 	hitpointsBonusRank5 = 1.2,
 
 	-- amount to add to a creature's sight radius 
-	sightRadiusBonus = 10,
+	sightRadiusBonus = 15,
 
 	-- flag that indicates whether the ranged damage bonuses
 	--  should be interpreted as a multiplier or a flat number
@@ -1213,18 +1221,18 @@ CreatureUpgrade =
 	rangedDamageBonusAsMult = 1,
 
 	-- ranged damage bonuses
-	rangedDamageBonusRank1 = 1.2,
-	rangedDamageBonusRank2 = 1.2,
-	rangedDamageBonusRank3 = 1.2,
-	rangedDamageBonusRank4 = 1.2,
-	rangedDamageBonusRank5 = 1.2,
+	rangedDamageBonusRank1 = 1.15,
+	rangedDamageBonusRank2 = 1.15,
+	rangedDamageBonusRank3 = 1.15,
+	rangedDamageBonusRank4 = 1.15,
+	rangedDamageBonusRank5 = 1.15,
 
 	-- amount to reduce an entity's defense by when it is 
 	--  attacked by an attacker with splash-damage upgrade
-	splashDmgDefenseMultiplier = 0.1,
+	splashDmgDefenseMultiplier = 0.25,
 
 	-- area attack radius multiplier
-	areaAttackRadiusMult = 1.25,
+	areaAttackRadiusMult = 1.5,
 }
 ---------------------------------------------------------------------
 -- AttackGround
@@ -1266,7 +1274,7 @@ FogOfWar =
 UI =
 {
 	-- delay between event cue henchman idle
-	henchmanidle = 160,
+	henchmanidle = 80,
 
 	-- battle track
 	btrackTimeTracked =  5,
@@ -1280,9 +1288,9 @@ UI =
 
 AutoDefense =
 {
-	radius = 10.0,
-	rechargeTicks = 32,
-	durationTicks = 80,
+	radius = 15.0,
+	rechargeTicks = 20,
+	durationTicks = 100,
 }
 
 ---------------------------------------------------------------------
@@ -1364,13 +1372,13 @@ FriendlyFire =
 	--                <= 1.0 (usual damaged received)
 
 	-- burst attacks
-	electricBurstMultiplier	= 0.7,
-	quillBurstMultiplier	= 0.4,
+	electricBurstMultiplier	= 0.8,
+	quillBurstMultiplier	= 0.5,
 
 	-- artillery attacks
 	rockMultiplier			= 0.8,
 	waterSpitMultiplier		= 0.8,
-	chemSprayMultiplier		= 0.8,
+	chemSprayMultiplier		= 1.0,
 }
 
 ---------------------------------------------------------------------

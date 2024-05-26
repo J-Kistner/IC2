@@ -12,8 +12,7 @@ dofilepath("data:attr_functions2.lua")
 -- desmos:\max\left(\left(\frac{\left(\min\left(1.2,\frac{4.4}{\min\left(x,4\right)}\right)^{x}\right)}{w^{\max\left(1,w-3\right)}\cdot1.2}\cdot\max\left(1,\frac{w}{4}\right)\right),1\right)
 -- w = 1-5
 function glass_if(dmg,rank)
-    --local glass_if_val = max(1,(((min(1.2,(4.4/(min(dmg,4))))^dmg)/((rank^(max(rank-3,1)))*1.2*max(1,rank-3.5))) * max((rank/4),1)));
-    local glass_if_val = max((5-rank^1.3)*0.05*dmg,1)
+    local glass_if_val = max(1,(((min(1.2,(4.4/(min(dmg,4))))^dmg)/((rank^(max(rank-3,1)))*1.2*max(1,rank-3.5))) * max((rank/4),1)));
     return glass_if_val;
 end
 
@@ -33,7 +32,7 @@ end
 -- comps for having more health
 -- desmos:\min\left(1.8,\max\left(1,.2\left(-0.00005\left(x-140\cdot\frac{1}{2}w^{2}\right)^{2}+4\cdot\frac{1}{2}w^{2}\right)\right)\right)
 function meat_comp(melee,range,rank)
-    x = ( 1.5 * melee);
+    x = ( 1.4 * melee);
     if (melee+range) < (1+(rank * 0.5 * rank))
     then 
         return x;

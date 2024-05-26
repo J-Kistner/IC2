@@ -6,9 +6,11 @@
 dofilepath("data:junction.lua")
 dofilepath("data:attr_functions.lua")
 dofilepath("data:attr_parameters.lua")
-
+dofilepath("data:attr_functions2.lua")
+dofilepath("data:cost_functions.lua")
 --deleteStart
 function combine_creature()
+    print("started combiner")
     --deleteEnd
 
     ---------------------
@@ -58,8 +60,10 @@ function combine_creature()
         -- This section contains some handy parameters for easy tweaking.
 
         -- Multipliers on ranged attack costs.
-        ranged_coal_cost_mult       = 1.1;
-        direct_range_elec_mult      = 1.5;
+        --original 1.1
+	ranged_coal_cost_mult       = 1.17;
+	--edit flag orginal : 1.5
+        direct_range_elec_mult      = 2.0;
         sonic_elec_mult             = 2.0;
         flying_artillery_elec_mult  = 1.5;
         range_pack_hunter_mult      = 1.25;
@@ -72,11 +76,11 @@ function combine_creature()
 
         -- Define Limits for some variables
         max_armour 			 = 0.60;
-        min_sight 			 = 20;
+        min_sight 			 = 25;
         max_sight 			 = 50;
         max_flyer_range_dist = 24;
-        min_landspeed		 = 15;
-        min_waterspeed		 = 12;
+        min_landspeed		 = 18;
+        min_waterspeed		 = 18;
         min_airspeed		 = 16;
         min_build_time       = 16;
         flyer_min_build_time = 50;
@@ -211,7 +215,11 @@ function combine_creature()
                 end
             end
         end
-
+        
+        if (Attr("underpopulation") == 1) then
+            setattribute("overpopulation", 0);
+        end
+        
         -- Helpful variable here, used later.
         setattribute("non_flyer_direct_range", 0);
         setattribute("flyer_direct_range", 0);
@@ -443,21 +451,21 @@ function combine_creature()
             { ABT_Ability, 	"poison_touch",     	  3, rank_domain, 	      null_domain, 	        -20,     80,    -20,     80  },
             { ABT_Ability, 	"poplow",                 1, null_domain,         null_domain,           0,      0,      0,      0   },	--special
             { ABT_Ability, 	"poplowtorso",            1, null_domain,         null_domain,           0,      0,      0,      0   },	--special
-            { ABT_Ability, 	"is_swimmer",             2, null_domain,         null_domain,           0,      0,      0,      0   },	--special
+            { ABT_Ability, 	"is_swimmer",             1, null_domain,         null_domain,           0,      0,      0,      0   },	--special
             { ABT_Ability,  "keen_sense",             1, null_domain,         null_domain,           10,     0,      0,      0   },
-            { ABT_Ability,  "infestation",            2, mobility_domain,     cost_ehp_domain,       10,     35,     25,     40  },
+            { ABT_Ability,  "infestation",            2, mobility_domain,     cost_ehp_domain,       10,     25,     20,     27.5  },
             { ABT_Ability,  "end_bonus",              1, null_domain,         null_domain,           5,      0,      0,      0   },
             { ABT_Ability, 	"loner",     			  2, power_domain, 	      null_domain, 	         100,    600,    100,    600 },
             { ABT_Ability, 	"overpopulation",         1, power_domain,        null_domain,           0,      200,    0,      200 },
             { ABT_Ability,  "soiled_land",            3, mobility_domain,     rank_domain,           30,     90,     50,     110 },
             { ABT_Ability, 	"is_immune", 		      1, power_domain, 	      defense_domain, 	     10,     60,     30,     90  },
-            { ABT_Ability, 	"deflection_armour",      2, cost_ehp_domain,     rank_domain,           10,     260,    10,     400 },
+            { ABT_Ability, 	"deflection_armour",      2, cost_ehp_domain,     rank_domain,           10,     260,    20,     400 },
             { ABT_Ability, 	"herding", 			      1, herd_boost_domain,   eff_mixed_dps_domain,  0,      150,    25,     350 },
             { ABT_Ability, 	"pack_hunter", 		      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      190, 	160, 	500 },
             { ABT_Ability, 	"is_stealthy", 		      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      90,     200, 	300 },
             { ABT_Ability, 	"can_dig", 			      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      60, 	150, 	210 },
-            { ABT_Ability, 	"regeneration", 	      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      110, 	110,    250 },
-            { ABT_Ability, 	"frenzy_attack", 	      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      100, 	150, 	370 },
+            { ABT_Ability, 	"regeneration", 	      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      160, 	140,    290 },
+            { ABT_Ability, 	"frenzy_attack", 	      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      80, 	130, 	350 },
             { ABT_Ability, 	"is_flyer",     		  1, null_domain, 	      null_domain, 	         0,      0,      0,      0   },
             { ABT_Ability, 	"ranged_piercing", 	      1, cost_ehp_domain,     range_dps_domain,      0,      50, 	 80, 	200 },
             { ABT_Ability, 	"leap_attack", 	          2, cost_ehp_domain,     eff_melee_dps_domain,  5,      25,     35,     60  },
@@ -465,7 +473,8 @@ function combine_creature()
             { ABT_Ability,  "flyer_direct_range",     1, cost_ehp_domain,     range_dps_domain,      0,      95,     80,     250 },
             { ABT_Ability,  "non_flyer_direct_range", 1, null_domain,         null_domain,           0,      0,      0,      0   },  --special case, but it really shouldn't be... TODO: fix this
             { ABT_Ability,  "has_artillery",          1, dist_dam_domain,     distance_domain,       0,      20,     75,     225 },
- 
+            { ABT_Ability,  "overpopulation",         1, rank_domain,         null_domain,           20,     100,    1,      100 },
+
             { ABT_Range, 	DT_Electric, 		      2, null_domain,         null_domain,           0,      0, 	 0,	     0   },	--special
             { ABT_Range, 	DT_Sonic, 			      2, null_domain,         null_domain,           0,   	 0,	     0,      0   },	--special
             { ABT_Range, 	DT_Poison,	              3, rank_domain,         null_domain,          -20,     40,    -20,     40  },	--Cost for chemical artillery (which has the melee poison damagetype).
@@ -488,6 +497,8 @@ function combine_creature()
         rc_x0y1_cost = 8;
         rc_x1y1_cost = 9;
         ability_calculated_cost = 10;
+        
+        
 
         --First find min rank for all abilities.
         ability_rank = Attr("power_rank");
@@ -522,7 +533,7 @@ function combine_creature()
                 -- Let's add a mobility cost to barrier destroy
                 if (ab[rc_id] == DT_BarrierDestroy) then
                     mobility_fraction_on_domain = Attr("mobility") / mobility_domain[dom_max]
-                    ability_cost = ability_cost * ((1.0 + mobility_fraction_on_domain) * 2.4)
+                    ability_cost = ability_cost * ((1.0 + mobility_fraction_on_domain) * 3.4)
                     end
 
 
@@ -569,14 +580,24 @@ function combine_creature()
     ----cost mods----
     -----------------
     -----------------
-
+        
         --cost_power equation (power with a 10% rebate for defense, used for calculating costs).
         --Note that below we employ the ehp_flyer_factor directly onto hitpoints; multiplying hp by a factor and then calculating ehp
         --has the exact same result as multiplying ehp by that same factor.
         defense_rebate_ehp = ( Attr( "hitpoints" ) * ehp_flyer_factor ) / ( 1-(Attr( "armour" ) * defense_cost_multiplier) );
-        cost_power = Power(defense_rebate_ehp, Attr( "effective_mixed_dps" ));
-
-        ----------------------------
+        --edit flag
+	cRank = Attr("creature_rank");
+    cMelee = Attr("melee_damage");
+    cRanged = Attr("range_damage");
+    cHealth = defense_rebate_ehp;
+    cDps = Attr("effective_mixed_dps")
+	cost_power = Power(defense_rebate_ehp,Attr("effective_mixed_dps"),Attr("creature_rank"));
+    --cost_power = Power((cHealth ^ 2 / extra_rank(cRank) * (0.61+cMelee/62) * ((0.10 + (0.04 - max(0,(0.02 * max(cRank-2,1))))) / ((cMelee) + range_comp(cMelee,cRanged,cRank) + meat_comp(cMelee,cRanged,cRank))/ level_tune(cRank)) * glass_if((cMelee+cRanged), cRank))/(ehp_flyer_factor * 2 ), 1.5*cDps*mid_melee(cMelee,cRanged,cRank)); 
+        -- removed lines from equations
+        -- orginal glass if: (1+((Attr("melee_damage")*(Attr("melee_damage")))/Attr("creature_rank")/4) * (((((Attr("melee_damage") + Attr("range_damage")) * 10) > Attr("hitpoints")) and (Attr("melee_damage") > Attr("range_damage"))) and 1 or 0))))
+        --range comp: (Attr("melee_damage") * 1 * (((Attr("range_damage") - Attr("melee_damage")) > 2) and 1 or 0)
+        --meat comp: + Attr("melee_damage") * 1.8 * (((Attr("effective_mixed_dps") < 7) and (Attr("creature_rank") > 2)) and 1 or 0 )+ 1.8 * Attr("melee_damage") * (((Attr("effective_mixed_dps") < 3)) and (Attr("creature_rank") < 3) and 1 or 0)
+        --level comp: / (((Attr("creature_rank") > 3) and 1 or 0) * (Attr("creature_rank")/5 ) + 1)----------------------------
         --mobility cost multiplier--
         ----------------------------
 
@@ -629,7 +650,7 @@ function combine_creature()
         end
 
         cost_elec = total_abilities_cost;
-
+    
     -----------------
     -----------------
     -----outputs-----
@@ -645,17 +666,40 @@ function combine_creature()
 
         --Buildtime calc
         --Overpop buildtime multiplier
-        if (Attr("overpopulation") == 1) then
-            build_time_multiplier = 0.5;
+        if (Attr("underpopulation") == 1) then
+            setattribute("overpopulation", 0);
+        
+            build_time_multiplier = 2.5;
+            setattribute("melee_damage", Attr("melee_damage") + UnderPop[cRank]);
+            setattribute("armor", Attr("armor") + UnderPop[cRank]);
+            setattribute("sight_radius1", Attr("sight_radius1") + UnderPop[cRank])
+            if (Attr("speed_max") > 0) then
+                setattribute("speed_max", Attr("speed_max") + UnderPop[cRank]);
+            end
+            if (Attr("waterspeed_max") > 0) then
+                setattribute("waterspeed_max", Attr("waterspeed_max") + UnderPop[cRank]);
+            end
+            if (Attr("airspeed_max") > 0) then
+                setattribute("airspeed_max", Attr("airspeed_max") + UnderPop[cRank]);
+            end
+            
         else
-            build_time_multiplier = 1.0;
+            
+            if (Attr("overpopulation") == 1) then
+                build_time_multiplier = 0.5;
+            else
+                build_time_multiplier = 1.0;
+            end
+        
         end
+        --Overpop buildtime multiplier
+        
 
         -- Build time equation
         build_time = (30 * Attr("creature_rank"))*((Attr("Power")*1.2/RankTable[Attr("creature_rank")][max_pow])^1.2)*build_time_multiplier;
 
         overpop_adjusted_min_build = ((has_flying==1) and flyer_min_build_time or min_build_time);
-
+        setattribute("creature_rank", ( ((has_flying == 1) and (cRank == 1)) and 2 or cRank) );
         --set minimum build time
         if Attr("overpopulation") == 1 then
             overpop_adjusted_min_build = overpop_adjusted_min_build / 2;
@@ -663,7 +707,7 @@ function combine_creature()
 
         build_time = max(build_time, overpop_adjusted_min_build);
         setattribute("constructionticks", build_time);
-
+        
         --Final Output
         setattribute( "cost", cost_coal );
         setattribute( "costRenew", cost_elec );
@@ -729,7 +773,6 @@ function combine_creature()
         -- Apply UI boundaries and UI rank attributes.
 
         for k, at in AttributeData do
-
             local attribute = at[AT_Name];
             local val = 0;
             local rating = 1;
@@ -740,12 +783,13 @@ function combine_creature()
 
                 -- Ranking.
                 if at[AT_RankList] then
-                    rating = Rank( val, at[AT_RankList] );
+                    rating = Rank( val, at[AT_RankList]);
                 end
             end
 
             if at[AT_UIName] then
                 -- Add the rating to the creature's variable list -- rating is in the range [0-4].
+                
                 setattribute( at[AT_UIName].. "_rating", rating - 1 );
                 -- Add the display version to the creature's variable list.
                 setattribute( at[AT_UIName] .. "_val", val * at[AT_UIScale] );
@@ -758,8 +802,8 @@ function combine_creature()
         for index, part in BodyPartsThatCanHaveRange do
             --endPairs
             if checkgameattribute( "range"..part.."_damage" ) == 1 then
-                val = Attr( "range"..part.."_damage" );
-                rating = Rank( val, {-1.0,12.0,20.0,26.0} );
+                val = Attr( "range"..part.."_damage" ) + ((Attr("underpopulation") == 1) and UnderPop[cRank] or 0);
+                rating = Rank( val, {-1.0,12.0,20.0,26.0} ,Attr("is_flyer"));
 
                 --It seems like for UI purposes, a creature is only considered "ranged" if it has ranged attributes
                 --on part 2 or part 4. So for our stocks with non-2-or-4 range parts, we have to first create fake

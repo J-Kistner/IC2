@@ -1067,10 +1067,8 @@ allunitstooltip = function( enabled, index )
 end
 --
 infocentersinglebasicstats = function( id )
-
 	local ebpid = EntityEBP( id )
 	local owner = EntityOwner( id )
-
 	-- basic stats
 	BindLabelToEntityName  ( "singlselect_name_label",    id, "singleselectinfotooltip", 5 )
 

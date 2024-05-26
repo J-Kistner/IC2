@@ -12,7 +12,7 @@ selection_sloppyness = 0.25,
 
 end_bonus = 0,
 
--- sightextinfo
+-- sightextinfo potato
 sight_radius1 = 20,
 keen_sense = 0,
 is_stealthy = 0,

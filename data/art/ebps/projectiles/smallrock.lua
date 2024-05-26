@@ -1,8 +1,8 @@
--- PROJECTILES
+-- smallrock
 
 gameattributes = {
-speed = 40,
-heighttodistratio = 0.5,
+speed = 50,
+heighttodistratio = 0.25,
 
 deathcount = 8,
 
@@ -18,12 +18,11 @@ damageradius_size8 = 7.6,
 damageradius_size9 = 7.8,
 damageradius_size10 = 8.0,
 
-
-simcollides = 1,
+simcollides = 0,
 isvisible = 1,
 actbeselect = 0,
 singleselectonly = 1,
-no_shadow = 0,
+no_shadow = 1,
 
 damageheightscale = 1,
 

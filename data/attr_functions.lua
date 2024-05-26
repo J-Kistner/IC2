@@ -31,8 +31,13 @@ function Rank( x, rank_upper_bounds )
 end
 
 --power equation
-function Power(ehp_in, damage_in)
-    return (ehp_in^0.608)*((0.22*damage_in) + 2.8);
+function Power(ehp_in, damage_in, rank_in)
+    rank_in = rank_in or 0
+    if rank_in == 0
+    then
+        return (ehp_in^0.608)*((0.22*damage_in) + 2.8);
+    end
+    return (ehp_in^0.608)*((0.22*damage_in) + 2.8)+(ehp_in^(0.6+((0.16- (0.03 * rank_in))*rank_in))/rank_in);
 end
 
 --Shape Value Equation
