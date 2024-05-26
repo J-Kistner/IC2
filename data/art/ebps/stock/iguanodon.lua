@@ -116,4 +116,6 @@ isFromExcel = {1,1.0},
 ["tag_desc"]={1,59031},
 ["lefthalf_name"]={1,59032},
 ["righthalf_name"]={1,59033},
+
+["underpopulation"]={0,1},
 }
