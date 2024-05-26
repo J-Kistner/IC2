@@ -1,0 +1,669 @@
+LimbScale = {		
+Info	0={
+Scale = 3,
+OtherCreatureName = 		"colossal_squid",
+Multiplier = 3,
+IsLimbCreature = 0,
+MismatchedLegs = 0,
+IsTorsoCreature = 1,
+Class = 32,Attach = 4,
+},		
+Info	1={
+Scale = 3,
+OtherCreatureName = 		"colossal_squid",
+Multiplier = 3,
+IsLimbCreature = 0,
+MismatchedLegs = 1,
+IsTorsoCreature = 1,
+Class = 32,Attach = 4,
+},		
+Info	2={
+Scale = 3,
+OtherCreatureName = 		"NARWHAL",
+Multiplier = 3,
+IsLimbCreature = 0,
+MismatchedLegs = 0,
+IsTorsoCreature = 1,
+Class = 32,
+Attach = 4,
+},		
+Info	3={
+Scale = 3,
+OtherCreatureName = 		"NARWHAL",
+Multiplier = 3,
+IsLimbCreature = 0,
+MismatchedLegs = 1,
+IsTorsoCreature = 1,
+Class = 32,
+Attach = 4,
+},		
+Info	4={
+Scale = 3,
+OtherCreatureName = 		"HATCHETFISH",
+Multiplier = 3,
+IsLimbCreature = 0,
+MismatchedLegs = 0,
+IsTorsoCreature = 1,
+Class = 32,
+Attach = 4,
+},		
+Info	5={
+Scale = 3,
+OtherCreatureName = 		"HATCHETFISH",
+Multiplier = 3,
+IsLimbCreature = 0,
+MismatchedLegs = 1,
+IsTorsoCreature = 1,
+Class = 32,Attach = 4,
+},		
+Info	6={
+Scale = 3,
+OtherCreatureName = 		"SNAIL",
+Multiplier = 3,
+IsLimbCreature = 0,
+MismatchedLegs = 0,
+IsTorsoCreature = 1,
+Class = 32,
+Attach = 4,
+},		
+Info	7={
+Scale = 3,
+OtherCreatureName = 		"SNAIL",
+Multiplier = 3,
+IsLimbCreature = 0,
+MismatchedLegs = 1,
+IsTorsoCreature = 1,
+Class = 32,
+Attach = 4,
+},		
+Info	8 ={
+Scale = 3,
+OtherCreatureName = 		"pistol_shrimp",
+Multiplier = 3,
+IsLimbCreature = 0,
+MismatchedLegs = 0,
+IsTorsoCreature = 1,
+Class = 32,
+Attach = 4,
+},		
+Info	9 ={
+Scale = 3,
+OtherCreatureName = 		"pistol_shrimp",
+Multiplier = 3,
+IsLimbCreature = 0,
+MismatchedLegs = 1,
+IsTorsoCreature = 1,
+Class = 32,
+Attach = 4,
+},		
+Info	10	
+={Scale = 3,OtherCreatureName = 		"HORNBILL",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	11	
+={Scale = 3,OtherCreatureName = 		"HORNBILL",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	12	
+={Scale = 3,OtherCreatureName = 		"skipper_caterpillar",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	13	
+={Scale = 3,OtherCreatureName = 		"skipper_caterpillar",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	14	
+={Scale = 3,OtherCreatureName = 		"TAPIR",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	15	
+={Scale = 3,OtherCreatureName = 		"TAPIR",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	16	
+={Scale = 3,OtherCreatureName = 		"spitting_spider",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	17	
+={Scale = 3,OtherCreatureName = 		"spitting_spider",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	18	
+={Scale = 3,OtherCreatureName = 		"FINISHED mole_rat",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	19	
+={Scale = 3,OtherCreatureName = 		"FINISHED mole_rat",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	20	
+={Scale = 3,OtherCreatureName = 		"blue_whale",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	21	
+={Scale = 3,OtherCreatureName = 		"blue_whale",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	22	
+={Scale = 3,OtherCreatureName = 		"humpback_whale",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	23	
+={Scale = 3,OtherCreatureName = 		"humpback_whale",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	24	
+={Scale = 3,OtherCreatureName = 		"TUNA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	25	
+={Scale = 3,OtherCreatureName = 		"TUNA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	26	
+={Scale = 3,OtherCreatureName = 		"SIPHONOPHORE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	27	
+={Scale = 3,OtherCreatureName = 		"SIPHONOPHORE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	28	
+={Scale = 3,OtherCreatureName = 		"mantis_shrimp",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	29	
+={Scale = 3,OtherCreatureName = 		"mantis_shrimp",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	30	
+={Scale = 3,OtherCreatureName = 		"ALBATROSS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	31	
+={Scale = 3,OtherCreatureName = 		"ALBATROSS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	32	
+={Scale = 3,OtherCreatureName = 		"whale_shark",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	33	
+={Scale = 3,OtherCreatureName = 		"whale_shark",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	34	
+={Scale = 3,OtherCreatureName = 		"blue_ringed_octopus",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	35	
+={Scale = 3,OtherCreatureName = 		"blue_ringed_octopus",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	36	
+={Scale = 3,OtherCreatureName = 		"ANGLERFISH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	37	
+={Scale = 3,OtherCreatureName = 		"ANGLERFISH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	38	
+={Scale = 3,OtherCreatureName = 		"CUTTLEFISH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	39	
+={Scale = 3,OtherCreatureName = 		"CUTTLEFISH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	40	
+={Scale = 3,OtherCreatureName = 		"BELUGA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	41	
+={Scale = 3,OtherCreatureName = 		"BELUGA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	42	
+={Scale = 3,OtherCreatureName = 		"VELVET_WORM",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	43	
+={Scale = 3,OtherCreatureName = 		"VELVET_WORM",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	44	
+={Scale = 3,OtherCreatureName = 		"LAMMERGEIER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	45	
+={Scale = 3,OtherCreatureName = 		"LAMMERGEIER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	46	
+={Scale = 3,OtherCreatureName = 		"BOLAS_SPIDER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	47	
+={Scale = 3,OtherCreatureName = 		"BOLAS_SPIDER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	48	
+={Scale = 3,OtherCreatureName = 		"ANACONDA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	49	
+={Scale = 3,OtherCreatureName = 		"ANACONDA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	50	
+={Scale = 3,OtherCreatureName = 		"BEHEMOTH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	51	
+={Scale = 3,OtherCreatureName = 		"BEHEMOTH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	52	
+={Scale = 3,OtherCreatureName = 		"BLACK_WIDOW",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	53	
+={Scale = 3,OtherCreatureName = 		"BLACK_WIDOW",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	54	
+={Scale = 3,OtherCreatureName = 		"BOMBARDIER_BEETLE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	55	
+={Scale = 3,OtherCreatureName = 		"BOMBARDIER_BEETLE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	56	
+={Scale = 3,OtherCreatureName = 		"COCKROACH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	57	
+={Scale = 3,OtherCreatureName = 		"COCKROACH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	58	
+={Scale = 3,OtherCreatureName = 		"CONDOR",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	59	
+={Scale = 3,OtherCreatureName = 		"CONDOR",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	60	
+={Scale = 3,OtherCreatureName = 		"FIRE_FLY",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	61	
+={Scale = 3,OtherCreatureName = 		"FIRE_FLY",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	62	
+={Scale = 3,OtherCreatureName = 		"GARDEN_SPIDER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	63	
+={Scale = 3,OtherCreatureName = 		"GARDEN_SPIDER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	64	
+={Scale = 3,OtherCreatureName = 		"GIANT_ANTEATER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	65	
+={Scale = 3,OtherCreatureName = 		"GIANT_ANTEATER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	66	
+={Scale = 3,OtherCreatureName = 		"HERCULES_BEETLE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	67	
+={Scale = 3,OtherCreatureName = 		"HERCULES_BEETLE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	68	
+={Scale = 3,OtherCreatureName = 		"SPIDER_WASP",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	69	
+={Scale = 3,OtherCreatureName = 		"SPIDER_WASP",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	70	
+={Scale = 3,OtherCreatureName = 		"STINK_BUG",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	71	
+={Scale = 3,OtherCreatureName = 		"STINK_BUG",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	72	
+={Scale = 3,OtherCreatureName = 		"STICK_BUG",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	73	
+={Scale = 3,OtherCreatureName = 		"STICK_BUG",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	74	
+={Scale = 3,OtherCreatureName = 		"TARANTULA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	75	
+={Scale = 3,OtherCreatureName = 		"TARANTULA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	76	
+={Scale = 3,OtherCreatureName = 		"TERMITE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	77	
+={Scale = 3,OtherCreatureName = 		"TERMITE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	78	
+={Scale = 3,OtherCreatureName = 		"ANT",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	79	
+={Scale = 3,OtherCreatureName = 		"ANT",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	80	
+={Scale = 3,OtherCreatureName = 		"ARCHERFISH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	81	
+={Scale = 3,OtherCreatureName = 		"ARCHERFISH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	82	
+={Scale = 3,OtherCreatureName = 		"ARMADILLO",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	83	
+={Scale = 3,OtherCreatureName = 		"ARMADILLO",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	84	
+={Scale = 3,OtherCreatureName = 		"BABOON",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	85	
+={Scale = 3,OtherCreatureName = 		"BABOON",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	86	
+={Scale = 3,OtherCreatureName = 		"DOLPHIN",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	87	
+={Scale = 3,OtherCreatureName = 		"DOLPHIN",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	88	
+={Scale = 3,OtherCreatureName = 		"BULL",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	89	
+={Scale = 3,OtherCreatureName = 		"BULL",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	90	
+={Scale = 3,OtherCreatureName = 		"CAMEL",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	91	
+={Scale = 3,OtherCreatureName = 		"CAMEL",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	92	
+={Scale = 3,OtherCreatureName = 		"CHAMELEON",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	93	
+={Scale = 3,OtherCreatureName = 		"CHAMELEON",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	94	
+={Scale = 3,OtherCreatureName = 		"CHEETAH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	95	
+={Scale = 3,OtherCreatureName = 		"CHEETAH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	96	
+={Scale = 3,OtherCreatureName = 		"CHIMPANZEE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	97	
+={Scale = 3,OtherCreatureName = 		"CHIMPANZEE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	98	
+={Scale = 3,OtherCreatureName = 		"COYOTE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	99	
+={Scale = 3,OtherCreatureName = 		"COYOTE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	100	
+={Scale = 3,OtherCreatureName = 		"CROCODILE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	101	
+={Scale = 3,OtherCreatureName = 		"CROCODILE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	102	
+={Scale = 3,OtherCreatureName = 		"DRAGONFLY",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	103	
+={Scale = 3,OtherCreatureName = 		"DRAGONFLY",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	104	
+={Scale = 3,OtherCreatureName = 		"EAGLE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	105	
+={Scale = 3,OtherCreatureName = 		"EAGLE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	106	
+={Scale = 3,OtherCreatureName = 		"ELECTRIC_EEL",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	107	
+={Scale = 3,OtherCreatureName = 		"ELECTRIC_EEL",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	108	
+={Scale = 3,OtherCreatureName = 		"ELEPHANT",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	109	
+={Scale = 3,OtherCreatureName = 		"ELEPHANT",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	110	
+={Scale = 3,OtherCreatureName = 		"GARFISH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	111	
+={Scale = 3,OtherCreatureName = 		"GARFISH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	112	
+={Scale = 3,OtherCreatureName = 		"GIRAFFE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	113	
+={Scale = 3,OtherCreatureName = 		"GIRAFFE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	114	
+={Scale = 3,OtherCreatureName = 		"GORILLA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	115	
+={Scale = 3,OtherCreatureName = 		"GORILLA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	116	
+={Scale = 3,OtherCreatureName = 		"GREAT_WHITE_SHARK",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	117	
+={Scale = 3,OtherCreatureName = 		"GREAT_WHITE_SHARK",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	118	
+={Scale = 3,OtherCreatureName = 		"GRIZZLY_BEAR",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	119	
+={Scale = 3,OtherCreatureName = 		"GRIZZLY_BEAR",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	120	
+={Scale = 3,OtherCreatureName = 		"HAMMERHEAD_SHARK",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	121	
+={Scale = 3,OtherCreatureName = 		"HAMMERHEAD_SHARK",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	122	
+={Scale = 3,OtherCreatureName = 		"HIPPOPOTAMUS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	123	
+={Scale = 3,OtherCreatureName = 		"HIPPOPOTAMUS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	124	
+={Scale = 3,OtherCreatureName = 		"HORNET",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	125	
+={Scale = 3,OtherCreatureName = 		"HORNET",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	126	
+={Scale = 3,OtherCreatureName = 		"HORSE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	127	
+={Scale = 3,OtherCreatureName = 		"HORSE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	128	
+={Scale = 3,OtherCreatureName = 		"HYENA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	129	
+={Scale = 3,OtherCreatureName = 		"HYENA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	130	
+={Scale = 3,OtherCreatureName = 		"KANGAROO",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	131	
+={Scale = 3,OtherCreatureName = 		"KANGAROO",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	132	
+={Scale = 3,OtherCreatureName = 		"KILLER_WHALE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	133	
+={Scale = 3,OtherCreatureName = 		"KILLER_WHALE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	134	
+={Scale = 3,OtherCreatureName = 		"KOMODO_DRAGON",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	135	
+={Scale = 3,OtherCreatureName = 		"KOMODO_DRAGON",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	136	
+={Scale = 3,OtherCreatureName = 		"LEMMING",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	137	
+={Scale = 3,OtherCreatureName = 		"LEMMING",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	138	
+={Scale = 3,OtherCreatureName = 		"LIONESS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	139	
+={Scale = 3,OtherCreatureName = 		"LIONESS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	140	
+={Scale = 3,OtherCreatureName = 		"LOBSTER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	141	
+={Scale = 3,OtherCreatureName = 		"LOBSTER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	142	
+={Scale = 3,OtherCreatureName = 		"MOOSE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	143	
+={Scale = 3,OtherCreatureName = 		"MOOSE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	144	
+={Scale = 3,OtherCreatureName = 		"MOUNTAIN_LION",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	145	
+={Scale = 3,OtherCreatureName = 		"MOUNTAIN_LION",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	146	
+={Scale = 3,OtherCreatureName = 		"MUSK_OX",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	147	
+={Scale = 3,OtherCreatureName = 		"MUSK_OX",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	148	
+={Scale = 3,OtherCreatureName = 		"PANTHER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	149	
+={Scale = 3,OtherCreatureName = 		"PANTHER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	150	
+={Scale = 3,OtherCreatureName = 		"PIRANHA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	151	
+={Scale = 3,OtherCreatureName = 		"PIRANHA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	152	
+={Scale = 3,OtherCreatureName = 		"POISON_FROG",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	153	
+={Scale = 3,OtherCreatureName = 		"POISON_FROG",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	154	
+={Scale = 3,OtherCreatureName = 		"POLAR_BEAR",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	155	
+={Scale = 3,OtherCreatureName = 		"POLAR_BEAR",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	156	
+={Scale = 3,OtherCreatureName = 		"PORCUPINE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	157	
+={Scale = 3,OtherCreatureName = 		"PORCUPINE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	158	
+={Scale = 3,OtherCreatureName = 		"PRAYING_MANTIS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	159	
+={Scale = 3,OtherCreatureName = 		"PRAYING_MANTIS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	160	
+={Scale = 3,OtherCreatureName = 		"RAM",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	161	
+={Scale = 3,OtherCreatureName = 		"RAM",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	162	
+={Scale = 3,OtherCreatureName = 		"RAT",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	163	
+={Scale = 3,OtherCreatureName = 		"RAT",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	164	
+={Scale = 3,OtherCreatureName = 		"RATTLESNAKE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	165	
+={Scale = 3,OtherCreatureName = 		"RATTLESNAKE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	166	
+={Scale = 3,OtherCreatureName = 		"RAVEN",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	167	
+={Scale = 3,OtherCreatureName = 		"RAVEN",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	168	
+={Scale = 3,OtherCreatureName = 		"RHINOCEROS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	169	
+={Scale = 3,OtherCreatureName = 		"RHINOCEROS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	170	
+={Scale = 3,OtherCreatureName = 		"SCORPION",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	171	
+={Scale = 3,OtherCreatureName = 		"SCORPION",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	172	
+={Scale = 3,OtherCreatureName = 		"SKUNK",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	173	
+={Scale = 3,OtherCreatureName = 		"SKUNK",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	174	
+={Scale = 3,OtherCreatureName = 		"SNAPPING_TURTLE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	175	
+={Scale = 3,OtherCreatureName = 		"SNAPPING_TURTLE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	176	
+={Scale = 3,OtherCreatureName = 		"SNOWY_OWL",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	177	
+={Scale = 3,OtherCreatureName = 		"SNOWY_OWL",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	178	
+={Scale = 3,OtherCreatureName = 		"SPERM_WHALE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	179	
+={Scale = 3,OtherCreatureName = 		"SPERM_WHALE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	180	
+={Scale = 3,OtherCreatureName = 		"SPITTING_COBRA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	181	
+={Scale = 3,OtherCreatureName = 		"SPITTING_COBRA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	182	
+={Scale = 3,OtherCreatureName = 		"TIGER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	183	
+={Scale = 3,OtherCreatureName = 		"TIGER",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	184	
+={Scale = 3,OtherCreatureName = 		"VAMPIRE_BAT",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	185	
+={Scale = 3,OtherCreatureName = 		"VAMPIRE_BAT",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	186	
+={Scale = 3,OtherCreatureName = 		"VULTURE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	187	
+={Scale = 3,OtherCreatureName = 		"VULTURE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	188	
+={Scale = 3,OtherCreatureName = 		"WALRUS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	189	
+={Scale = 3,OtherCreatureName = 		"WALRUS",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	190	
+={Scale = 3,OtherCreatureName = 		"WARTHOG",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	191	
+={Scale = 3,OtherCreatureName = 		"WARTHOG",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	192	
+={Scale = 3,OtherCreatureName = 		"WOLF",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	193	
+={Scale = 3,OtherCreatureName = 		"WOLF",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	194	
+={Scale = 3,OtherCreatureName = 		"WOLVERINE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	195	
+={Scale = 3,OtherCreatureName = 		"WOLVERINE",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	196	
+={Scale = 3,OtherCreatureName = 		"WOOLLY_MAMMOTH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	197	
+={Scale = 3,OtherCreatureName = 		"WOOLLY_MAMMOTH",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	198	
+={Scale = 3,OtherCreatureName = 		"ZEBRA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 0,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+Info	199	
+={Scale = 3,OtherCreatureName = 		"ZEBRA",
+Multiplier = 3,IsLimbCreature = 0,MismatchedLegs = 1,IsTorsoCreature = 1,Class = 32,Attach = 4,},		
+}		
