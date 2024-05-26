@@ -1,0 +1,29 @@
+LimbScale = {
+Info1 = {
+Scale = 5,
+OtherCreatureName = "BELUGA",
+Multiplier = 0.55000,
+IsLimbCreature = 0,
+Attach = 3,
+Class = 64,
+IsTorsoCreature = 1,
+},
+Info2 = {
+Scale = 5,
+OtherCreatureName = "SKIPPER_CATERPILLAR",
+Multiplier = 0.60000,
+IsLimbCreature = 0,
+Attach = 3,
+Class = 64,
+IsTorsoCreature = 1,
+},
+Info0 = {
+Scale = 6,
+OtherCreatureName = "BELUGA",
+Multiplier = 0.75000,
+IsLimbCreature = 0,
+Attach = 3,
+Class = 128,
+IsTorsoCreature = 1,
+},
+}
