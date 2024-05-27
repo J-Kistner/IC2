@@ -1,0 +1,5 @@
+[files]
+file_0=bananatel\DataMods\reduced resources.sga
+file_1=bananatel\DataMods\reduced resources.ver
+[version]
+version=1.0
