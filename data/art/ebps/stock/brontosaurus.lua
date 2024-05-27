@@ -30,9 +30,9 @@ isFromExcel = {1,1.0},
 ["speed_mid-back"]={3,1.5},
 ["exp_speed_mid"]={1,0.025},
 
-["speed_max-front"]={2,6},
-["speed_max-torso"]={6,3},
-["speed_max-back"]={3,5},
+["speed_max-front"]={2,9},
+["speed_max-torso"]={6,2},
+["speed_max-back"]={3,9},
 ["exp_speed_max"]={1,-0.18},
 
 ["airspeed_max-torso"]={6,0},
