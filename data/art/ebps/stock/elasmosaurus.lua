@@ -40,7 +40,7 @@ isFromExcel = {1,1.0},
 ["exp_airspeed_max"]={1,-0.16},
 
 ["waterspeed_max-torso"]={6,15},
-["waterspeed_max-tail"]={5,10},
+["waterspeed_max-tail"]={5,15},
 ["exp_waterspeed_max"]={1,-0.1},
 
 ["melee4_number"]={4,1},
@@ -110,6 +110,4 @@ isFromExcel = {1,1.0},
 ["tag_desc"]={1,59201},
 ["lefthalf_name"]={1,59202},
 ["righthalf_name"]={1,59203},
-
-["underpopulation"]={0,1},
 }
