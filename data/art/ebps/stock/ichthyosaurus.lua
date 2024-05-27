@@ -7,7 +7,7 @@ isFromExcel = {1,1.0},
 
 ["size"]={1,3},
 
-["sight_radius1"]={4,20},
+["sight_radius1"]={4,37},
 ["night_sight_radius"]={4,0},
 
 ["stocktype"]={1,5},
