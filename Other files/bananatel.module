@@ -18,9 +18,9 @@ PatcherUrl		=
 ;; List of archives to load for this MOD order is important
 ;; The first Archives registered will be scanned for files first
 
-ArchiveFile_1= TellurianData.sga
+ArchiveFile_3= TellurianData.sga
 ArchiveFile_2= InsectData.sga
-
+ArchiveFile_1= bananatel.sga
 ;; //////////////////////////////////////////////////////////////////
 ;; List of MODs that have might have scenario packs that are 
 ;; compatible with this MOD.  Will only work if the scenarios are
