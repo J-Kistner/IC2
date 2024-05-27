@@ -4,7 +4,7 @@ isFromExcel = {1,1.0},
 
 ["endurance_bonus"]={1,0},
 
-["size"]={1,5},
+["size"]={1,7},
 
 ["sight_radius1"]={4,25},
 ["night_sight_radius"]={4,0},
@@ -19,10 +19,10 @@ isFromExcel = {1,1.0},
 ["exp_armour"]={1,0},
 ["exp_dodge"]={1,-0.125},
 
-["hitpoints-head"]={4,35},
+["hitpoints-head"]={4,50},
 ["hitpoints-front"]={2,0},
 ["hitpoints-back"]={3,0},
-["hitpoints-torso"]={6,125},
+["hitpoints-torso"]={6,250},
 ["exp_hitpoints"]={1,1.4},
 
 ["speed_mid-front"]={2,0},
@@ -45,12 +45,22 @@ isFromExcel = {1,1.0},
 
 ["melee4_number"]={4,1},
 ["melee4_dmgtype"]={4,0},
-["melee4_damage"]={4,14},
+["melee4_damage"]={4,5},
 ["melee4_rate"]={4,1.4},
 ["melee4_contact"]={4,0.5},
 ["melee4_name"]={4,59204},
 ["melee4_shortdesc"]={4,59205},
 ["melee4_longdesc"]={4,59206},
+
+["melee2_number"]={2,2},
+["melee2_dmgtype"]={2,0},
+["melee2_damage"]={2,10},
+["melee2_rate"]={2,1.85},
+["melee2_contact"]={2,0.48},
+["melee2_name"]={2,36586},
+["melee2_shortdesc"]={2,36587},
+["melee2_longdesc"]={2,36496},
+["exp_melee2_damage"]={1,0.8},
 
 ["melee_damage"]={1,14},
 

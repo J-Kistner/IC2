@@ -11,10 +11,10 @@ isFromExcel = {1,1.0},
 
 ["stocktype"]={1,5},
 
-["armour-head"]={4,0.06},
-["armour-front"]={2,0},
-["armour-back"]={3,0},
-["armour-torso"]={6,0.10},
+["armour-head"]={4,0.08},
+["armour-front"]={2,3},
+["armour-back"]={3,3},
+["armour-torso"]={6,0.20},
 
 ["exp_armour"]={1,0},
 ["exp_dodge"]={1,-0.125},
@@ -39,13 +39,13 @@ isFromExcel = {1,1.0},
 ["airspeed_max-wings"]={7,0},
 ["exp_airspeed_max"]={1,-0.16},
 
-["waterspeed_max-torso"]={6,12},
-["waterspeed_max-tail"]={5,8},
+["waterspeed_max-torso"]={6,18},
+["waterspeed_max-tail"]={5,12},
 ["exp_waterspeed_max"]={1,-0.1},
 
 ["melee4_number"]={4,1},
 ["melee4_dmgtype"]={4,0},
-["melee4_damage"]={4,12},
+["melee4_damage"]={4,6},
 ["melee4_rate"]={4,1.4},
 ["melee4_contact"]={4,0.5},
 ["melee4_name"]={4,59144},
@@ -110,6 +110,4 @@ isFromExcel = {1,1.0},
 ["tag_desc"]={1,59141},
 ["lefthalf_name"]={1,59142},
 ["righthalf_name"]={1,59143},
-
-["underpopulation"]={0,1},
 }

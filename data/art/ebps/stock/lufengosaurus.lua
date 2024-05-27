@@ -4,7 +4,7 @@ limbattributes = {
 isFromExcel = {1,1.0},
 
 ["endurance_bonus"]={1,0},
-["size"]={1,6},
+["size"]={1,4},
 ["sight_radius1"]={4,30},
 ["night_sight_radius"]={4,0},
 ["stocktype"]={1,1},
@@ -27,9 +27,9 @@ isFromExcel = {1,1.0},
 ["speed_mid-back"]={3,2.1},
 ["exp_speed_mid"]={1,0.025},
 
-["speed_max-front"]={2,7},
-["speed_max-torso"]={6,3},
-["speed_max-back"]={3,7},
+["speed_max-front"]={2,9},
+["speed_max-torso"]={6,7},
+["speed_max-back"]={3,9},
 ["exp_speed_max"]={1,-0.18},
 
 ["airspeed_max-torso"]={6,0},
@@ -117,6 +117,4 @@ isFromExcel = {1,1.0},
 ["tag_desc"]={1,59010},
 ["lefthalf_name"]={1,59011},
 ["righthalf_name"]={1,59012},
-
-["underpopulation"]={0,1},
 }

@@ -117,5 +117,4 @@ isFromExcel = {1,1.0},
 ["lefthalf_name"]={1,59032},
 ["righthalf_name"]={1,59033},
 
-["underpopulation"]={0,1},
 }

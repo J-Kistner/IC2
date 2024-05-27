@@ -53,6 +53,22 @@ isFromExcel = {1,1.0},
 
 ["exp_melee4_damage"]={1,0.6},
 
+["range4_number"]={4,1},
+["range4_dmgtype"]={4,16},
+["range4_special"]={4,0},
+["range4_contact"]={4,0.5},
+["range4_name"]={4,5553},
+["range4_shortdesc"]={4,5554},
+["range4_longdesc"]={4,5555},
+["range4_damage"]={4,6},
+["exp_range4_damage"]={1,0.9},
+["range4_max"]={4,17},
+["exp_range4_max"]={1,0.36},
+["range4_min"]={4,0.01},
+["exp_range4_min"]={1,0.365},
+["range4_rate"]={4,1.55},
+["exp_range4_rate"]={1,0.26},
+
 ["stink_attack"]={5,0},
 ["electric_burst"]={5,0},
 ["charge_attack"]={3,0},
@@ -107,5 +123,4 @@ isFromExcel = {1,1.0},
 ["lefthalf_name"]={1,59042},
 ["righthalf_name"]={1,59043},
 
-["underpopulation"]={0,1},
 }
