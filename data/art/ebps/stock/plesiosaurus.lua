@@ -12,8 +12,8 @@ isFromExcel = {1,1.0},
 ["stocktype"]={1,5},
 
 ["armour-head"]={4,0.08},
-["armour-front"]={2,3},
-["armour-back"]={3,3},
+["armour-front"]={2,03},
+["armour-back"]={3,03},
 ["armour-torso"]={6,0.20},
 
 ["exp_armour"]={1,0},
@@ -39,8 +39,10 @@ isFromExcel = {1,1.0},
 ["airspeed_max-wings"]={7,0},
 ["exp_airspeed_max"]={1,-0.16},
 
+["waterspeed_max-front"]= {2,6},
+["waterspeed_max-back"] = {3,6},
 ["waterspeed_max-torso"]={6,18},
-["waterspeed_max-tail"]={5,12},
+["waterspeed_max-tail"]={5,14},
 ["exp_waterspeed_max"]={1,-0.1},
 
 ["melee4_number"]={4,1},
