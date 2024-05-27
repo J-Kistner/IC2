@@ -278,7 +278,7 @@ function combine_creature()
 
         power_domain            = {1000,  "Power"};
         true_size_domain        = {10,    "size"};
-        scaling_size_domain     = {12,    "scaling_size"}; --For creatures over size 9, this their size as displayed in army builder.
+        scaling_size_domain     = {13,    "scaling_size"}; --For creatures over size 9, this their size as displayed in army builder.
         ehp_domain              = {3000,  "ehp"};
         cost_ehp_domain         = {3000,  "cost_ehp"};
         melee_dps_domain        = {100,   "melee_damage"}; --Pure melee damage (for power calcs)
