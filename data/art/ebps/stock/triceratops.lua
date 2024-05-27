@@ -16,10 +16,10 @@ isFromExcel = {1,1.0},
 ["exp_armour"]={1,0},
 ["exp_dodge"]={1,-0.125},
 
-["hitpoints-head"]={4,70},
-["hitpoints-front"]={2,90},
-["hitpoints-back"]={3,90},
-["hitpoints-torso"]={6,280},
+["hitpoints-head"]={4,60},
+["hitpoints-front"]={2,80},
+["hitpoints-back"]={3,80},
+["hitpoints-torso"]={6,230},
 ["exp_hitpoints"]={1,1.4},
 
 ["speed_mid-front"]={2,1.2},
@@ -106,6 +106,4 @@ isFromExcel = {1,1.0},
 ["tag_desc"]={1,59061},
 ["lefthalf_name"]={1,59062},
 ["righthalf_name"]={1,59063},
-
-["underpopulation"]={0,1},
 }
