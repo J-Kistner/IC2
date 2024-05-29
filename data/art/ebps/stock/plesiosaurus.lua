@@ -12,8 +12,8 @@ isFromExcel = {1,1.0},
 ["stocktype"]={1,5},
 
 ["armour-head"]={4,0.08},
-["armour-front"]={2,0.03},
-["armour-back"]={3,0.03},
+["armour-front"]={2,03},
+["armour-back"]={3,03},
 ["armour-torso"]={6,0.20},
 
 ["exp_armour"]={1,0},
