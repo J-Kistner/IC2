@@ -2,7 +2,7 @@
 limbattributes = {
 isFromExcel = {1,1.0},
 ["endurance_bonus"]={1,0},
-["size"]={1,9},
+["size"]={1,10},
 ["sight_radius1"]={4,20},
 ["night_sight_radius"]={4,0},
 ["stocktype"]={1,1},
