@@ -778,7 +778,7 @@ SonicAttack =
 	speedReduction  = 0.05,
 
 	-- how much percent of your speed can be reduced to
-	speedMinPercentage = 0.5,
+	speedMinPercentage = 0.2,
 
 	-- reduction per hit for loner unit
 	speedReductionForLoner  = 0.5,
@@ -850,16 +850,16 @@ LeapInfo =
 {
 	-- Leap distance, the creature must be at least min meters away to turn charge on
 	-- but can be up to max meters away to enable charge
-	distleapmin			= 7.0,
+	distleapmin			= 4.0,
 	distleapmax			= 36.0,
 	-- multiply to melee damage to get charge damage.
 	damagemultiplier	= 1.5,
 
 	-- the creature will leap (at most) every this number of seconds
-	leapRateSeconds		= 3.0,
+	leapRateSeconds		= 2.5,
 
 	-- how long it takes a leap to reach its target once it started leaping ( in seconds )
-	attackSeconds		= 0.7,
+	attackSeconds		= 0.5,
 
 	-- how long it take a leaper to cool after a leap attack ( in seconds ); cooling means the unit can do NOTHING during this duration.
 	coolSeconds			= 0.0,

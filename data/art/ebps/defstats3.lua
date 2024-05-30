@@ -32,6 +32,8 @@ ext.Melee0_rate = 2.0
 ext.Melee0_dmgtype = 0
 ext.Melee0_number = 1
 
+ext.is_land = 1
+
 -- Tag Vision Ability
 ext.tagtype0 		= 1
 ext.tagproximity0 	= 1.0

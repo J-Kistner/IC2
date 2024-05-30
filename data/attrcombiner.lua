@@ -64,7 +64,7 @@ function combine_creature()
 	ranged_coal_cost_mult       = 1.17;
 	--edit flag orginal : 1.5
         direct_range_elec_mult      = 2.0;
-        sonic_elec_mult             = 2.0;
+        sonic_elec_mult             = 1.5;
         flying_artillery_elec_mult  = 1.5;
         range_pack_hunter_mult      = 1.25;
         artillery_targets_hit       = 1;

@@ -4,7 +4,7 @@ isFromExcel = {1,1.0},
 
 ["endurance_bonus"]={1,0},
 
-["size"]={1,4},
+["size"]={1,3},
 
 ["sight_radius1"]={4,20},
 ["night_sight_radius"]={4,0},
@@ -12,8 +12,8 @@ isFromExcel = {1,1.0},
 ["stocktype"]={1,5},
 
 ["armour-head"]={4,0.08},
-["armour-front"]={2,03},
-["armour-back"]={3,03},
+["armour-front"]={2,0.03},
+["armour-back"]={3,0.03},
 ["armour-torso"]={6,0.20},
 
 ["exp_armour"]={1,0},
@@ -72,7 +72,7 @@ isFromExcel = {1,1.0},
 ["can_dig"]={2,0},
 ["can_SRF"]={6,0},
 ["pack_hunter"]={0,0},
-["herding"]={0,0},
+["herding"]={0,1},
 ["loner"]={0,0},
 ["leap_attack"]={3,0},
 ["poison_touch"]={5,0},
