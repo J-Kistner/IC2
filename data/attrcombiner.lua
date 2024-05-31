@@ -469,7 +469,7 @@ function combine_creature()
             { ABT_Ability,  "soiled_land",            3, mobility_domain,     rank_domain,           30,     90,     50,     110 },
             { ABT_Ability, 	"is_immune", 		      1, power_domain, 	      defense_domain, 	     10,     60,     30,     90  },
             { ABT_Ability, 	"deflection_armour",      2, cost_ehp_domain,     rank_domain,           10,     260,    20,     400 },
-            { ABT_Ability, 	"herding", 			      1, herd_boost_domain,   eff_mixed_dps_domain,  0,      150,    25,     350 },
+            { ABT_Ability, 	"herding", 			      1, herd_boost_domain,   eff_mixed_dps_domain,  0,      150,    25,     175 },
             { ABT_Ability, 	"pack_hunter", 		      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      190, 	160, 	500 },
             { ABT_Ability, 	"is_stealthy", 		      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      90,     200, 	300 },
             { ABT_Ability, 	"can_dig", 			      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      60, 	150, 	210 },
