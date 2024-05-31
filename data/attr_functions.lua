@@ -10,6 +10,33 @@ function setattribute( attribute_string, value )
     setuiattribute(attribute_string,value);
 end
 
+function Ln(z)
+    local s = 0;
+    local b = (z-1)/(z+1);
+    local b2 = b * b;
+    for i = 1, 100, 2 do
+        s = s + (1 / i) * b;
+        b = b * b2;
+    end
+
+    return 2 * s;
+end
+
+function Calculate_sum(h, b)
+    local sum = 0;
+    local increment = 0.01;
+    
+    for i = 1, (h - b) do
+        sum = sum + increment
+        increment = increment + 0.01
+        if increment > 1 then
+            increment = 1
+        end
+    end
+    
+    return sum;
+end
+
 function Attr(attribute_string)
     if attribute_string == "null" then
         return(1);
@@ -37,7 +64,7 @@ function Power(ehp_in, damage_in, rank_in)
     then
         return (ehp_in^0.608)*((0.22*damage_in) + 2.8);
     end
-    return (ehp_in^0.608)*((0.22*damage_in) + 2.8)+(ehp_in^(0.6+((0.16- (0.03 * rank_in))*rank_in))/rank_in);
+    return (ehp_in^0.608)*((0.22*damage_in) + 2.8)+(ehp_in^(0.6+((0.16- (0.03 * rank_in))*rank_in))/rank_in) + Calculate_sum(ehp_in, (rank_in) * 100);
 end
 
 --Shape Value Equation
@@ -83,3 +110,27 @@ function range_artillerytype( limb )
     -- if this creature has a special field it has artillery
     return get_range_var( limb, "special");
 end
+
+--function Scale(start, max, endx, size, offset)
+ --   local z = (endx-start) / offset;
+ --   
+ --   local s = 0;
+ --   local b = (z-1)/(z+1);
+  --  local b2 = b * b;
+  --  for i = 1, 100, 2 do
+  --      s = s + (1 / i) * b;
+  ---      b = b * b2;
+  --  end
+--
+ --   local v = 2 * s / endx;
+ --   local za = v*endx;
+ --   local sum = 1;
+ --   local term = 1;
+--
+ --   for i = 1, 100 do -- 100 terms should give a reasonable approximation
+ --       term = term * za / i;
+ --       sum = sum + term;
+ --   end
+ --   return sum*offset;
+--end
+

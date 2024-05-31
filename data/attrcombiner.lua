@@ -26,13 +26,13 @@ function combine_creature()
         max_pow = 1;
         base_coal_cost = 2;
         cost_exponent = 3;  -- NOTE: The lower the cost exponent, the more expensive spam becomes and the cheaper power becomes.
-
+        
         RankTable =
         {
-            {60,    60,     1},     --L1
-            {120,   100,    1},     --L2
-            {230,   170,    0.8},    --L3
-            {400,   240,    0.8},   --L4
+            {60,    60,     1   },     --L1
+            {120,   100,    1   },     --L2
+            {230,   170,    0.8 },    --L3
+            {400,   240,    0.8 },   --L4
             {1000,  410,    0.75}    --L5
         };
 
@@ -98,6 +98,15 @@ function combine_creature()
 
         -- These variables are grabbed from tuning!
         herding_def_multiplier = PackBonus.basedefensemodifier; -- I know this says pack but it's herding
+
+    -----------------
+    -----------------
+    ---- Scaling ----
+    -----------------
+    -----------------
+
+
+        
 
     -----------------
     -----------------
@@ -276,7 +285,7 @@ function combine_creature()
         dom_max = 1;
         dom_val = 2;
 
-        power_domain            = {1000,  "Power"};
+        power_domain            = {1500,  "Power"};
         true_size_domain        = {10,    "size"};
         scaling_size_domain     = {13,    "scaling_size"}; --For creatures over size 9, this their size as displayed in army builder.
         ehp_domain              = {3000,  "ehp"};
@@ -381,7 +390,7 @@ function combine_creature()
     -----------------
     -----------------
 
-        setattribute( "Power", Power(Attr("ehp"), Attr("mixed_dps")) );
+        setattribute( "Power", Power(Attr("ehp"), Attr("mixed_dps")) , Attr("creature_rank"));
 
         rank_cmp = {
             RankTable[1][max_pow],
