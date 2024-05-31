@@ -362,7 +362,7 @@ ResearchBonus =
 
 	-- collection rate bonus to give to all electricity collectors with the
 	-- strengthen-electrical-grid research
-	strengthenElecGridMultiplier		= 1.25,
+	strengthenElecGridMultiplier		= 1.5,
 
 	-- henchman improved healing
 	henchmanImpHealingMultiplier		= 2.0,
@@ -881,7 +881,7 @@ Henchman =
 	gatherSearchRadius = 50.0,
 
 	--
-	yokeBonus = 1.25,
+	yokeBonus = 1.5,
 
 	-- land speed bonus (in km/h) for motivated henchmen
 	motivatedLandSpeedBonus = 10.0,
