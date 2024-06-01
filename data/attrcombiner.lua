@@ -12,7 +12,7 @@ dofilepath("data:cost_functions.lua")
 function combine_creature()
     print("started combiner")
     --deleteEnd
-
+    print(Attr("name"))
     ---------------------
     ---------------------
     -- Constant Tables --
@@ -75,7 +75,7 @@ function combine_creature()
         mobility_flyer_mult = 1.5;
 
         -- Define Limits for some variables
-        max_armour 			 = 0.60;
+        max_armour 			 = 0.60; --redifined in following section
         min_sight 			 = 25;
         max_sight 			 = 50;
         max_flyer_range_dist = 24;
@@ -101,13 +101,23 @@ function combine_creature()
 
     -----------------
     -----------------
-    ---- Scaling ----
+    ---- defense ----
     -----------------
     -----------------
-
-
         
+        -- removing abilites that shouldn't go with shell
+        if Attr("shell") == 1 then
+            setattribute("herding", 0);
+            setattribute("regeneration", 0);
+        end
 
+        -- counts the body parts with hardened
+        hardened_count = 1+max(0,Attr("hardened_head")) + max(0,Attr("hardened_front")) + max(0,Attr("hardened_torso")) + max(0,Attr("hardened_back")) + max(0,Attr("hardened_tail"));
+        hardened_bonus = {0,0.01,0.03,0.09,0.27,0.81};
+        shell = Attr("shell");
+        max_armour 	= 0.60 + shell/10 + (hardened_count -1 )/100;
+        setattribute("armour", Attr("armour") + (shell / 10) );
+        setattribute("armour", min(Attr("armour"), max_armour));
     -----------------
     -----------------
     -- Attributes ---
@@ -119,8 +129,8 @@ function combine_creature()
         has_swim		= Attr( "is_swimmer" );
         has_land		= Attr( "is_land" );
 
-        --Set Limits
-        setattribute("armour", min(Attr("armour"), max_armour));
+        --Set Limits --flag
+        --setattribute("armour", min(Attr("armour"), max_armour)); defined in prior section
         setattribute("sight_radius1", min(max(Attr("sight_radius1"), min_sight), max_sight));
 
         if (has_land == 0 and has_swim == 0 and has_flying == 0) then
@@ -470,20 +480,26 @@ function combine_creature()
             { ABT_Ability, 	"is_immune", 		      1, power_domain, 	      defense_domain, 	     10,     60,     30,     90  },
             { ABT_Ability, 	"deflection_armour",      2, cost_ehp_domain,     rank_domain,           10,     260,    20,     400 },
             { ABT_Ability, 	"herding", 			      1, herd_boost_domain,   eff_mixed_dps_domain,  0,      150,    25,     175 },
-            { ABT_Ability, 	"pack_hunter", 		      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      190, 	160, 	500 },
-            { ABT_Ability, 	"is_stealthy", 		      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      90,     200, 	300 },
-            { ABT_Ability, 	"can_dig", 			      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      60, 	150, 	210 },
-            { ABT_Ability, 	"regeneration", 	      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      160, 	140,    290 },
-            { ABT_Ability, 	"frenzy_attack", 	      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      80, 	130, 	350 },
+            { ABT_Ability, 	"pack_hunter", 		      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      190, 	160, 	 500 },
+            { ABT_Ability, 	"is_stealthy", 		      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      90,     200, 	 300 },
+            { ABT_Ability, 	"can_dig", 			      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      60, 	150, 	 210 },
+            { ABT_Ability, 	"regeneration", 	      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      160, 	140,     290 },
+            { ABT_Ability, 	"frenzy_attack", 	      1, cost_ehp_domain,     eff_mixed_dps_domain,  0,      80, 	130, 	 350 },
             { ABT_Ability, 	"is_flyer",     		  1, null_domain, 	      null_domain, 	         0,      0,      0,      0   },
-            { ABT_Ability, 	"ranged_piercing", 	      1, cost_ehp_domain,     range_dps_domain,      0,      50, 	 80, 	200 },
+            { ABT_Ability, 	"ranged_piercing", 	      1, cost_ehp_domain,     range_dps_domain,      0,      50, 	 80, 	 200 },
             { ABT_Ability, 	"leap_attack", 	          2, cost_ehp_domain,     eff_melee_dps_domain,  5,      25,     35,     60  },
             { ABT_Ability, 	"charge_attack", 	      2, cost_ehp_domain,     eff_melee_dps_domain,  20,     45,     65,     80  },
             { ABT_Ability,  "flyer_direct_range",     1, cost_ehp_domain,     range_dps_domain,      0,      95,     80,     250 },
             { ABT_Ability,  "non_flyer_direct_range", 1, null_domain,         null_domain,           0,      0,      0,      0   },  --special case, but it really shouldn't be... TODO: fix this
             { ABT_Ability,  "has_artillery",          1, dist_dam_domain,     distance_domain,       0,      20,     75,     225 },
             { ABT_Ability,  "overpopulation",         1, rank_domain,         null_domain,           20,     100,    1,      100 },
-
+            { ABT_Ability,  "hardened_head",          1, null_domain,         null_domain,           10,     0,      0,        10},
+            { ABT_Ability,  "hardened_front",         1, null_domain,         null_domain,           10,     0,      0,        10},
+            { ABT_Ability,  "hardened_torso",         1, null_domain,         null_domain,           10,     0,      0,        10},
+            { ABT_Ability,  "hardened_back",          1, null_domain,         null_domain,           10,     0,      0,        10},
+            { ABT_Ability,  "hardened_tail",          1, null_domain,         null_domain,           10,     0,      0,        10},
+            { ABT_Ability,  "shell",                  1, null_domain,         null_domain,           40,     0,      0,        40},
+        
             { ABT_Range, 	DT_Electric, 		      2, null_domain,         null_domain,           0,      0, 	 0,	     0   },	--special
             { ABT_Range, 	DT_Sonic, 			      2, null_domain,         null_domain,           0,   	 0,	     0,      0   },	--special
             { ABT_Range, 	DT_Poison,	              3, rank_domain,         null_domain,          -20,     40,    -20,     40  },	--Cost for chemical artillery (which has the melee poison damagetype).

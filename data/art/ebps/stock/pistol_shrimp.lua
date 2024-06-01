@@ -114,5 +114,11 @@ limbattributes = {
     ["tag_desc"]={1,36539},
     ["lefthalf_name"]={1,36537},
     ["righthalf_name"]={1,36538},
+    ["shell"] = {6,0},
+    ["hardened_head"] = {4,0},
+    ["hardened_front"] = {2,0},
+    ["hardened_torso"] = {6,1},
+    ["hardened_back"] = {3,0},
+    ["hardened_tail"] = {5,1},
     }
     

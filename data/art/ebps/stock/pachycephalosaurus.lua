@@ -79,6 +79,13 @@ isFromExcel = {1,1.0},
 ["sonar_pulse"]={4,0},
 ["end_bonus"]={6,0},
 
+["shell"] = {6,0},
+["hardened_head"] = {4,2},
+["hardened_front"] = {2,0},
+["hardened_torso"] = {6,0},
+["hardened_back"] = {3,0},
+["hardened_tail"] = {5,0},
+
 ["front_foot_type"]={2,3},
 ["rear_foot_type"]={3,3},
 ["vocal_type"]={4,7},

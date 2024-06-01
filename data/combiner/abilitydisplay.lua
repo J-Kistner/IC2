@@ -265,6 +265,14 @@ AbilitiesList =
 		shortdesc		= 37497,
 		showonlyincombiner	= 0,
 	},
+	WebThrowFront =
+	{
+		gameattributename 	= "web_throw_front",
+		bodypart		= part_front_legs,
+		name			= 37496,
+		shortdesc		= 37497,
+		showonlyincombiner	= 0,
+	},
 	SoiledLand =
 	{
 		gameattributename 	= "soiled_land",
@@ -319,6 +327,54 @@ AbilitiesList =
 		bodypart		= part_pincers,
 		name			= 37532,
 		shortdesc		= 37579,
+		showonlyincombiner	= 0,
+	},
+	DefensiveShell =
+	{
+		gameattributename 	= "shell",
+		bodypart		= part_torso,
+		name			= 63207,
+		shortdesc		= 63208,
+		showonlyincombiner	= 0,
+	},
+	HardenedHead =
+	{
+		gameattributename 	= "hardened_head",
+		bodypart		= part_head,
+		name			= 63209,
+		shortdesc		= 63210,
+		showonlyincombiner	= 0,
+	},
+	HardenedFront =
+	{
+		gameattributename 	= "hardened_front",
+		bodypart		= part_front_legs,
+		name			= 63209,
+		shortdesc		= 63210,
+		showonlyincombiner	= 0,
+	},
+	HardenedTorso =
+	{
+		gameattributename 	= "hardened_torso",
+		bodypart		= part_torso,
+		name			= 63209,
+		shortdesc		= 63210,
+		showonlyincombiner	= 0,
+	},
+	HardenedBack =
+	{
+		gameattributename 	= "hardened_back",
+		bodypart		= part_back_legs,
+		name			= 63209,
+		shortdesc		= 63210,
+		showonlyincombiner	= 0,
+	},
+	HardenedTail =
+	{
+		gameattributename 	= "hardened_tail",
+		bodypart		= part_tail,
+		name			= 63209,
+		shortdesc		= 63210,
 		showonlyincombiner	= 0,
 	},
 }

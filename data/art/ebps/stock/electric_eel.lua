@@ -107,5 +107,11 @@ isFromExcel = {1,1.0},
 ["tag_desc"]={1,24057},
 ["lefthalf_name"]={1,24058},
 ["righthalf_name"]={1,24059},
+["shell"] = {6,0},
+["hardened_head"] = {4,0},
+["hardened_front"] = {2,0},
+["hardened_torso"] = {6,0},
+["hardened_back"] = {3,0},
+["hardened_tail"] = {5,0},
     }
     
