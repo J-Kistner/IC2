@@ -11,7 +11,7 @@ Description		= INHABITANTS OF THE EARTH!
 DllName			= bananatel
 LocaleFolder	= bananatel
 ModFolder		= bananatel
-ModVersion      = 9.10.1
+ModVersion      = 9.10.1.1
 PatcherUrl		= 
 
 ;; //////////////////////////////////////////////////////////////////
