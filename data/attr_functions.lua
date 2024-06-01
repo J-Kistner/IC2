@@ -64,7 +64,7 @@ function Power(ehp_in, damage_in, rank_in)
     then
         return (ehp_in^0.608)*((0.22*damage_in) + 2.8);
     end
-    return (ehp_in^0.608)*((0.22*damage_in) + 2.8)+(ehp_in^(0.6+((0.16- (0.03 * rank_in))*rank_in))/rank_in) + Calculate_sum(ehp_in, ((rank_in == 5) and 50 or 0) + (rank_in) * 125 );
+    return (ehp_in^0.608)*((0.22*damage_in) + 2.8)+(ehp_in^(0.6+((0.16- (0.03 * rank_in))*rank_in))/rank_in) + Calculate_sum(ehp_in, (rank_in) * 125 );
 end
 
 --Shape Value Equation

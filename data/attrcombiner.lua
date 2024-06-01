@@ -10,9 +10,9 @@ dofilepath("data:attr_functions2.lua")
 dofilepath("data:cost_functions.lua")
 --deleteStart
 function combine_creature()
-    print("started combiner")
+    
     --deleteEnd
-    print(Attr("name"))
+    
     ---------------------
     ---------------------
     -- Constant Tables --
@@ -112,9 +112,11 @@ function combine_creature()
         end
 
         -- counts the body parts with hardened
-        hardened_count = 1+max(0,Attr("hardened_head")) + max(0,Attr("hardened_front")) + max(0,Attr("hardened_torso")) + max(0,Attr("hardened_back")) + max(0,Attr("hardened_tail"));
+        hardened_count = max(0,Attr("hardened_head")) + max(0,Attr("hardened_front")) + max(0,Attr("hardened_torso")) + max(0,Attr("hardened_back")) + max(0,Attr("hardened_tail"));
         hardened_bonus = {0,0.01,0.03,0.09,0.27,0.81};
         shell = Attr("shell");
+        print(hardened_count)
+        print(((3^hardened_count)/3)/100)
         max_armour 	= 0.60 + shell/10 + (hardened_count -1 )/100;
         setattribute("armour", Attr("armour") + (shell / 10) );
         setattribute("armour", min(Attr("armour"), max_armour));
@@ -426,6 +428,11 @@ function combine_creature()
             setattribute("size", 10);
         end
 
+    -- Duplicate web throws
+    if Attr("web_throw_front") then
+        setattribute("web_throw", 0)
+
+
     -----------------
     -----------------
     --ability costs--
@@ -467,6 +474,7 @@ function combine_creature()
             { ABT_Ability, 	"quill_burst",            2, rank_domain,         null_domain,           10,     35,     10,     35  },
             { ABT_Ability, 	"electric_burst",     	  1, rank_domain, 	      null_domain, 	         20,     170,    20,     170 },
             { ABT_Ability, 	"web_throw",     	      3, rank_domain, 	      null_domain, 	         20,     90,     20,     90  },
+            { ABT_Ability, 	"web_throw_front",     	      3, rank_domain, 	      null_domain, 	         20,     90,     20,     90  },
             { ABT_Ability, 	"poison_touch",     	  3, rank_domain, 	      null_domain, 	        -20,     80,    -20,     80  },
             { ABT_Ability, 	"poplow",                 1, null_domain,         null_domain,           0,      0,      0,      0   },	--special
             { ABT_Ability, 	"poplowtorso",            1, null_domain,         null_domain,           0,      0,      0,      0   },	--special

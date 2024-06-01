@@ -13,7 +13,7 @@ ext.regen = 1
 -- costextinfo
 ext.cost = 5
 ext.costrenew = 1
-ext.constructionticks = 22
+ext.constructionticks = 6
 
 -- fenceextinfo
 ext.growthTicks = 1
