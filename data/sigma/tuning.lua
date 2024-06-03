@@ -332,9 +332,10 @@ Building =
 
 	-- how far away does a structure have to be away from a resource before it can be built, in meters
 	-- it will make buildings not placeable within a square around the resource of this size
-	resourceNoBuildSize		= 26.0,
 
-	-- what percentage of health should a building start with [0.0 to 1.0]
+	resourceNoBuildSize		= 22.0,
+
+	---- what percentage of health should a building start with [0.0 to 1.0]
 	startHealthPercent		= 0.2,
 
 	-- what percentage of scrap do you get back when you self destroy a building
