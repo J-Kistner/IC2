@@ -428,7 +428,7 @@ StinkCloud =
 
 	--
 	reducedVictimSpeedTo	= 0.5,  -- 50% of full speed
-}
+	}
 
 ---------------------------------------------------------------------
 -- ElectricBurst
@@ -1137,7 +1137,7 @@ Flyer =
 	swoopUpTicks = 3.0,
 
 	-- the number of seconds of damage a flyer's first attack counts as
-	firstAttackSeconds = 2.0,
+	firstAttackSeconds = 1.0,
 
 	-- melee damage multiplier
 	meleeDmgMult = 1.2,
